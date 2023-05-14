@@ -1,16 +1,4 @@
-#spring.datasource.url=jdbc:mysql://localhost:3306/pbackend?useSSL=false&serverTimezone=UTC
-#spring.datasource.username=root
-#spring.datasource.password=
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
-spring.datasource.url=jdbc:mysql://updtjsst5yyeubsm:1DUjVSGTJF03sGveiKn4@b2zxrdxrj7hb0cmfa3w9-mysql.services.clever-cloud.com:3306/b2zxrdxrj7hb0cmfa3w9
-spring.datasource.username=updtjsst5yyeubsm
-spring.datasource.password=1DUjVSGTJF03sGveiKn4
-spring.datasource.hikari.maximum-pool-size = 2
-
-#JWT
-
-jwt.secret = secret
-
-jwt.expiration = 3600
+FROM amazoncorretto:8-alpine-jdk
+MAINTAINER celestempaez
+COPY target/portfolioBackEnd-0.0.1-SNAPSHOT.jar portfolioBackEnd-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ENTRYPOINT ["java","-jar","/portfolioBackEnd-0.0.1-SNAPSHOT.jar"]
