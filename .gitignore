@@ -30,4 +30,8 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
+<<<<<<< HEAD:.gitignore
 .vscode/
+=======
+.vscode/
+>>>>>>> 3ca1bd688227be98997009db9ea92e9a3739a2d2:portfolioBackEnd/.gitignore
