@@ -2,3 +2,7 @@ FROM amazoncorretto:8-alpine-jdk
 MAINTAINER celestempaez
 COPY target/portfolioBackEnd-0.0.1-SNAPSHOT.jar portfolioBackEnd-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","/portfolioBackEnd-0.0.1-SNAPSHOT.jar"]
+<<<<<<< HEAD
+=======
+spring.datasource.hikari.maximum-pool-size = 2
+>>>>>>> 3f25606 (Updated)
